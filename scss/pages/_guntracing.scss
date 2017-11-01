@@ -1,0 +1,116 @@
+.story {
+    width: 100%;
+    margin: auto;
+        a {
+            color: #000;
+            &:hover{
+                color: #000;
+            }
+        }
+}
+
+.wrap-story {
+  max-width: 1260px;
+//  margin: 70px;
+  @media(max-width: $screen-mobile){
+    margin: 0px;
+    }
+}
+
+.outer   {
+  @include outer-container (50%);
+  max-width: 400px;
+      @media(max-width: $screen-mobile){
+      @include outer-container (100%);
+      }
+}
+
+.outer p {
+  font-size: 1.4em;
+      @media(max-width: $screen-mobile){
+      margin: 0 10px 10px 10px;
+      }
+}
+
+.arrow-margin {
+  margin-top: 3%;
+      @media(max-width: $screen-mobile){
+      margin: 3% 0 3% 0;
+      }
+}
+
+.lead-photo   {
+    @include outer-container (70%);
+    margin-top: 3%;
+    @media(max-width: $screen-mobile){
+    @include outer-container (100%);
+    margin: 5% 0 5% 0;
+    }
+}
+
+.headline   {
+    @include outer-container (50%);
+    margin-top: 10%;
+    text-align:center;
+        h1 {
+         font-size: 2em;
+        }
+    @media(max-width: $screen-mobile){
+    @include outer-container (90%);
+    margin: 22% 25px 5% 25px;
+    font-size: .8em;
+    }
+}
+
+.headline p{
+    @media(max-width: $screen-mobile){
+    font-size: 1.4em;
+    }
+}
+
+.portfolioFilter {
+}
+
+// Body text
+
+.story-text-box {
+      ul {
+        list-style-position: inside;
+        margin: 0;
+        padding: 10px 10px 10px 20px;
+        font-family: 'Crimson-Text';
+        line-height: 30px;
+        font-size: 1.25em;
+        text-align: left;
+          @include media(max-width $screen-mobile){
+          font-size: 1.5em;
+          line-height: 30px;  
+      }
+
+      }
+    @include media(min-width $screen-mobile){
+      @include outer-container(50%);
+      }
+    @include media(max-width $screen-mobile){
+      @include outer-container(90%);
+      }
+    @include media(min-width $screen-larger){
+      @include outer-container(40%);
+      }
+}
+
+.story-text-box p{
+  font-family: 'Crimson-Text'; 
+  text-align: left;
+  margin: 25px auto;
+  color: #111;
+  width: 100%;
+      @include media(min-width $screen-mobile){
+          font-size: 1.25em;
+          line-height: 30px; 
+      }
+      @include media(max-width $screen-mobile){
+          font-size: 1.5em;
+          line-height: 30px;  
+      }
+}
